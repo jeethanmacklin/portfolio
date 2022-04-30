@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link ref="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="script.css">
+  <script src="script.js"></script>
+<body style="background-color: black">
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="images/main1.jpg" alt="Me" width="1500" height="100">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Jeethan Macklin</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Jeethan Macklin</h5>
+    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER/CINEMATOGRAPHER/EDITOR</h3>
+  </div>
+
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#aboutme" class="w3-bar-item w3-button">About me</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#aboutme" class="w3-bar-item w3-button">About me</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div><br>
+<!--nav float-->
+<div class="floating-container">
+  <div class="floating-button">+</div>
+  <div class="element-container">
+
+    <a href="#contact"> <span class="float-element tooltip-left">
+      <i class="material-icons">phone
+      </i></a>
+    </span>
+      <span class="float-element"> <a href="#">
+      <i class="material-icons">home
+</i></a>
+    </span>
+    <span class="float-element"> <a href="#portfolio">
+    <i class="material-icons">camera
+    </i></a>
+    </span>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-container w3-white" id="aboutme">
+    <h3 class="w3-center">About Me</h3>
+</div>
+<h3 class="w3-text-white w3-center"><p class="w3-serif">I'm a self taught 19 year old aspiring photographer, filmmaker and video editor from the coast of Mangalore. Having completed my 12th from St. Aloysius College, I decided to follow my passion for film making and learning more about the craft full-time. I spend most of my time working on fun little videos for my social media and editing stock footage in my room and when I'm not in my room working on something, I'm at the beach with my camera finding inspiration and capturing moments.
+<br>I absolutely love the process of filming and editing. Watching people from the videos and photos see visuals of themselves from a third person’s perspective gratifies me. Doing what I do helps me relive moments all over again and I'm glad I can do so.</h3>
+</p>
+<div class="w3-container w3-white" >
+  <h3 class="w3-center">Edits</h3>
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/img.before.jpg" style="width:100%">
+  <img class="mySlides" src="images/img.after.jpg" style="width:100%">
+  <img class="mySlides" src="images/before.jpg" style="width:100%">
+    <img class="mySlides" src="images/after.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="w3-container w3-white" id="portfolio">
+  <h1>Photographs</h1>
+</div>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs1.jpg" style="width:100%" height:"100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs2.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs3.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs4.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs6.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs8.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/img3.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs12.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/img2.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/img1.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs11.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/img4.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs13.jpg" style="width:100%" height="100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs10.jpg" style="width:100%" height="100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/bs7.jpg" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-white">
+  <h1>Product Shots</h1>
+</div>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/pr1.jpg" style="width:100%" height="100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/pr3.jpg" style="width:100%" height="100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/pr2.webp" style="width:100%">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="w3-container w3-white">
+    <h1>Videos</h1>
+  </div>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <video src="images/vn mv1.mp4" style="width:100%" controls="true">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="w3-row-padding w3-margin-top ">
+  <div class="w3-third">
+    <div class="w3-card">
+      <video src="images/vd1.mp4" style="width:100%" height="100%" controls="true">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <video src="images/vd2.mp4" style="width:100%" height="100%" controls="true">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <video src="images/vd3.mp4" style="width:100%" controls="true">
+      <div class="w3-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Contact -->
+  <div class="w3-white w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center-left"><i class="fa fa-vcard-o"></i> Contact</h3><br>
+
+    <h4><i class="fa fa-phone"></i> Phone: 9845769382 </h4>
+    <h4> <i class="fa fa-envelope"></i> Email: jeethanmacklin1@gmail.com</h4>
+    <h4><i class="fa fa-user-circle"></i> Instagram: <a href="https://instagram.com/jeethan_macklin?igshid=YmMyMTA2M2Y=" class="w3-bar-item w3-text-black">jeethan_macklin</a></h4>
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
